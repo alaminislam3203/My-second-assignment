@@ -349,7 +349,15 @@
   transform: scale(1.3);
 }
 
-/* responsive design for mobile screen */
+
+
+
+
+
+
+
+
+/* Responsive design for mobile screen */
 
 @media screen and (max-width: 576px) {
   /* header section */
@@ -399,7 +407,9 @@
   .our-plants-contents p {
     font-size: 1.2rem;
   }
-
+.our-plants{
+  margin-left: 16px;
+}
   .our-plant-images {
     width: 100%;
     padding: 30px;
@@ -420,7 +430,7 @@
   }
 
   .plant-lover {
-    width: 100%;
+    width: 590px;
     flex-direction: column;
     align-content: center;
     align-items: center;
@@ -445,19 +455,38 @@
     width: 100%;
   }
 
-  .deal-section {
+  .section {
     width: 100%;
   }
+  .right{
+    flex-direction: column;
+  }
+.deal-title .right{
+  font-size: 1.25rem;
+}
 
-  .deal-contents {
-    width: 100%;
+
+  .deals-grid {
+    width: 570px;
     margin: 10px auto;
     justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto;
+    gap: 10px;
   }
-  .deal-contents h3 {
+
+  .left-top,
+  .left-bottom,
+  .right {
+    width: 550px;  
+    height: 200px; 
+    grid-row: auto; 
+  }
+
+  .deals-grid h3 {
     font-size: 1.5rem;
   }
-  .deal-contents p {
+  .deals-grid p {
     font-size: 1rem;
   }
   .deal-flex {
@@ -478,12 +507,10 @@
     font-size: 1.25rem;
     font-weight: 700;
   }
-  .mini-card-2 {
-    border-radius: 0;
-  }
 
   .join-section {
-    width: 100%;
+    width: 600px;
+    height: 275px;
     align-items: center;
     align-content: center;
   }
@@ -492,7 +519,184 @@
     align-items: center;
     flex-direction: row;
   }
-  #email {
+  .subscribe-form input {
+    width: 250px;
+  }
+
+  .footer {
+    width: 100%;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* header section */
+
+  .navbar {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .nav-display-none {
+    display: none;
+  }
+  .hero {
+    width: 100%;
+    flex-wrap: wrap-reverse;
+  }
+  .hero-image {
+    margin-left: 200px;
+    margin-bottom: 20px;
+  }
+  .hero-image img {
+    width: 100%;
+  }
+  .hero-content {
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  #hero-content-paragraph {
+    font-size: 1rem;
+  }
+
+  .our-plants {
+    width: 100%;
+  }
+  .our-plants-contents {
+    width: 100%;
+  }
+
+  .our-plants-contents h3 {
+    font-size: 1.5rem;
+  }
+  .our-plants-contents p {
+    font-size: 1.2rem;
+  }
+.our-plants{
+  margin-left: 35px;
+}
+  .our-plant-images {
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .lily-flower-image {
+    width: 100%;
+  }
+
+  .lily-flower-image img {
+    width: 100%;
+  }
+  .lily-flower-image button {
+    padding: 5px;
+    margin-left: 10px;
+  }
+
+  .plant-lover {
+    width: 590px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 120px;
+    margin-bottom: 100px;
+  }
+  .plant-image img {
+    width: 100%;
+  }
+  .plant-lover h3 {
+    margin-left: 20px;
+  }
+  .plant-contents img {
+    display: none;
+  }
+  .plant-contents h3 {
+    font-size: 1.5rem;
+  }
+  .plant-contents ul {
+    font-size: 1rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .section {
+    width: 100%;
+  }
+  .right{
+    flex-direction: column;
+  }
+.deal-title .right{
+  font-size: 1.25rem;
+}
+
+
+  .deals-grid {
+    width: 570px;
+    margin: 10px auto;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+
+  .left-top,
+  .left-bottom,
+  .right {
+    width: 800px;  
+    height: 300px; 
+    margin-left: 85px;
+    grid-row: auto; 
+  }
+
+  .deals-grid h3 {
+    font-size: 1.5rem;
+  }
+  .deals-grid p {
+    font-size: 1rem;
+  }
+  .deal-flex {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .max {
+    width: 367px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .join-section {
+    width: 850px;
+    height: 275px;
+    align-items: center;
+    align-content: center;
+  }
+  .overlay{
+    margin-right: 5px;
+  }
+  .form {
+    width: 300px;
+    align-items: center;
+    flex-direction: row;
+  }
+  .subscribe-form input {
     width: 250px;
   }
 
